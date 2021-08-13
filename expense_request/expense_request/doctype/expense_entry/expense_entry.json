@@ -1,4 +1,5 @@
 {
+ "actions": [],
  "allow_events_in_timeline": 1,
  "allow_import": 1,
  "autoname": "EXP-.YYYY.-.#####",
@@ -43,15 +44,13 @@
    "fieldname": "posting_date",
    "fieldtype": "Date",
    "in_list_view": 1,
-   "label": "Posting Date",
-   "read_only": 1
+   "label": "Posting Date"
   },
   {
    "allow_in_quick_entry": 1,
    "fieldname": "required_by",
    "fieldtype": "Datetime",
-   "label": "Required By",
-   "reqd": 1
+   "label": "Required By"
   },
   {
    "allow_in_quick_entry": 1,
@@ -148,8 +147,7 @@
   {
    "fieldname": "payment_to",
    "fieldtype": "Data",
-   "label": "Payment To",
-   "reqd": 1
+   "label": "Payment To"
   },
   {
    "fieldname": "section_break_8",
@@ -168,6 +166,7 @@
   },
   {
    "allow_in_quick_entry": 1,
+   "default": "Main - SK",
    "description": "Applies to all expenses below unless specified differently",
    "fieldname": "default_cost_center",
    "fieldtype": "Link",
@@ -192,8 +191,9 @@
   }
  ],
  "is_submittable": 1,
- "modified": "2020-10-30 12:14:26.377515",
- "modified_by": "adam.daveed@gmail.com",
+ "links": [],
+ "modified": "2021-07-10 16:44:47.877393",
+ "modified_by": "Administrator",
  "module": "Expense Request",
  "name": "Expense Entry",
  "owner": "Administrator",
