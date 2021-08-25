@@ -126,18 +126,7 @@ doc_events = {
 # }
 
 
-fixtures = ["Workflow", "Workflow State", "Workflow Action Master",
-	{
-		"dt": "Print Format",
-		"filters": [
-			[
-				"name", "in", [
-					"Expense Entry"
-				]
-			]
-		]
-
-	},
+fixtures = [
 	{
 		"dt": "Custom Field",
 		"filters": [

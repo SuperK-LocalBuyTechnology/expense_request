@@ -137,17 +137,6 @@ def make_journal_entry(expense_entry):
 
         pay_account = ""
 
-        if (expense_entry.mode_of_payment != "Cash" and (not 
-            expense_entry.payment_reference or not expense_entry.clearance_date)):
-            frappe.throw(
-                title="Enter Payment Reference",
-                msg="Payment Reference and Date are Required for all non-cash payments."
-            )
-        else:
-            expense_entry.clearance_date = ""
-            expense_entry.payment_reference = ""
-
-
         payment_mode = frappe.get_doc('Mode of Payment', expense_entry.mode_of_payment)
         for acc in payment_mode.accounts:
             pay_account = acc.default_account
