@@ -21,14 +21,13 @@
   "expense_details_section",
   "expenses",
   "section_break_8",
-  "quantity",
+  "mode_of_payment",
   "column_break_20",
   "total",
   "additional_information_section",
   "remarks",
   "approved_by",
   "column_break_8",
-  "mode_of_payment",
   "payment_reference",
   "clearance_date",
   "status",
@@ -50,6 +49,7 @@
    "allow_in_quick_entry": 1,
    "fieldname": "required_by",
    "fieldtype": "Datetime",
+   "hidden": 1,
    "label": "Required By"
   },
   {
@@ -147,6 +147,7 @@
   {
    "fieldname": "payment_to",
    "fieldtype": "Data",
+   "hidden": 1,
    "label": "Payment To"
   },
   {
@@ -154,14 +155,9 @@
    "fieldtype": "Section Break"
   },
   {
-   "fieldname": "quantity",
-   "fieldtype": "Read Only",
-   "label": "Quantity",
-   "print_hide": 1
-  },
-  {
    "fieldname": "accounting_dimensions_section",
    "fieldtype": "Section Break",
+   "hidden": 1,
    "label": "Accounting Dimensions"
   },
   {
@@ -192,7 +188,7 @@
  ],
  "is_submittable": 1,
  "links": [],
- "modified": "2021-07-10 16:44:47.877393",
+ "modified": "2021-08-25 10:06:54.293211",
  "modified_by": "Administrator",
  "module": "Expense Request",
  "name": "Expense Entry",
