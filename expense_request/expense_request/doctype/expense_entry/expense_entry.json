@@ -138,7 +138,7 @@
    "fieldtype": "Select",
    "hidden": 1,
    "label": "Status",
-   "options": "Pending\nApproved\nRejected"
+   "options": "Draft\nPending\nApproved\nRejected"
   },
   {
    "allow_on_submit": 1,
@@ -197,7 +197,7 @@
  ],
  "is_submittable": 1,
  "links": [],
- "modified": "2021-08-25 13:11:33.971690",
+ "modified": "2021-09-01 10:38:48.446023",
  "modified_by": "Administrator",
  "module": "Expense Request",
  "name": "Expense Entry",
