@@ -88,6 +88,24 @@ frappe.ui.form.on('Expense Entry', {
 			}
 		});
 		
-	}
+	},
+    mode_of_payment: (frm) => {
+        frappe.call({
+            method: "expense_request.expense_request.doctype.expense_entry.expense_entry.get_closing_balance",
+            args: {
+                mode_of_payment: frm.doc.mode_of_payment,
+            },
+            callback: (r) => {
+                if (r.message) {
+                    frm.doc.balance = r.message;
+                    frm.refresh_field("balance");
+                }
+                else {
+                    frm.doc.balance = "";
+                    frm.refresh_field("balance");
+                }
+            },
+          });
+    }
 
 });
