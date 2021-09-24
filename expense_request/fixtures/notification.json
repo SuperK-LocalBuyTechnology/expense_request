@@ -1,1 +1,45 @@
-[]
+[
+ {
+  "attach_print": 0,
+  "channel": "System Notification",
+  "condition": null,
+  "date_changed": null,
+  "days_in_advance": 0,
+  "docstatus": 0,
+  "doctype": "Notification",
+  "document_type": "Expense Entry",
+  "enabled": 0,
+  "event": "Save",
+  "is_standard": 0,
+  "message": "Add your message here",
+  "method": null,
+  "modified": "2021-08-23 14:50:50.543492",
+  "module": null,
+  "name": "Expense entry",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "print_format": null,
+  "property_value": null,
+  "recipients": [
+   {
+    "bcc": null,
+    "cc": null,
+    "condition": null,
+    "parent": "Expense entry",
+    "parentfield": "recipients",
+    "parenttype": "Notification",
+    "receiver_by_document_field": "owner",
+    "receiver_by_role": "Expense Approver"
+   }
+  ],
+  "send_system_notification": 0,
+  "send_to_all_assignees": 0,
+  "sender": null,
+  "sender_email": null,
+  "set_property_after_alert": null,
+  "slack_webhook_url": null,
+  "subject": "Expense Entry submitted",
+  "value_changed": null
+ }
+]

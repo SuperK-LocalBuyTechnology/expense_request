@@ -22,6 +22,7 @@
   "expenses",
   "section_break_8",
   "mode_of_payment",
+  "balance",
   "column_break_20",
   "total",
   "additional_information_section",
@@ -193,11 +194,17 @@
    "hidden": 1,
    "label": "Quantity",
    "read_only": 1
+  },
+  {
+   "fieldname": "balance",
+   "fieldtype": "Read Only",
+   "label": "Balance",
+   "read_only": 1
   }
  ],
  "is_submittable": 1,
  "links": [],
- "modified": "2021-09-01 10:38:48.446023",
+ "modified": "2021-09-14 10:46:13.849203",
  "modified_by": "Administrator",
  "module": "Expense Request",
  "name": "Expense Entry",
