@@ -22,6 +22,7 @@
   "expenses",
   "section_break_8",
   "mode_of_payment",
+  "balance",
   "column_break_20",
   "total",
   "additional_information_section",
@@ -138,7 +139,7 @@
    "fieldtype": "Select",
    "hidden": 1,
    "label": "Status",
-   "options": "Pending\nApproved\nRejected"
+   "options": "Draft\nPending\nApproved\nRejected"
   },
   {
    "allow_on_submit": 1,
@@ -193,11 +194,17 @@
    "hidden": 1,
    "label": "Quantity",
    "read_only": 1
+  },
+  {
+   "fieldname": "balance",
+   "fieldtype": "Read Only",
+   "label": "Balance",
+   "read_only": 1
   }
  ],
  "is_submittable": 1,
  "links": [],
- "modified": "2021-08-25 13:11:33.971690",
+ "modified": "2021-09-14 10:46:13.849203",
  "modified_by": "Administrator",
  "module": "Expense Request",
  "name": "Expense Entry",
